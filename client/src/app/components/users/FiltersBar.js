@@ -10,24 +10,24 @@ import { IconField } from 'primereact/iconfield';
 export default function FiltersBar({ data, onFiltersChange }) {
     
     const [searchTerm, setSearchTerm] = useState('');
-    const [selectedEstado, setSelectedEstado] = useState(null);
-    const [estadoOptions, setEstadoOptions] = useState([]);
+    const [selectedStatus, setSelectedStatus] = useState(null);
+    const [statusOptions, setStatusOptions] = useState([]);
 
     useEffect(() => {
         const uniqueEstados = [...new Set(data.map(user => user.estado))];
-        setEstadoOptions(uniqueEstados.map(estado => ({ label: estado, value: estado })));
+        setStatusOptions(uniqueEstados.map(estado => ({ label: estado, value: estado })));
     }, [data]);
 
     useEffect(() => {
-        onFiltersChange({ searchTerm, selectedEstado });
-    }, [searchTerm, selectedEstado, onFiltersChange]);
+        onFiltersChange({ searchTerm, selectedStatus });
+    }, [searchTerm, selectedStatus, onFiltersChange]);
 
     const handleSearchChange = (event) => {
         setSearchTerm(event.target.value);
     };
 
     const handleEstadoChange = (event) => {
-        setSelectedEstado(event.value);
+        setSelectedStatus(event.value);
     };
 
     return (
@@ -44,8 +44,8 @@ export default function FiltersBar({ data, onFiltersChange }) {
             <IconField iconPosition="left">
                 <InputIcon className="pi pi-filter" />
                 <Dropdown
-                    value={selectedEstado}
-                    options={estadoOptions}
+                    value={selectedStatus}
+                    options={statusOptions}
                     onChange={handleEstadoChange}
                     placeholder="Filtrar por estado"
                     className="p-dropdown p-component"

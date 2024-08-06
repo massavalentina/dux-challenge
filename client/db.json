@@ -1,58 +1,10 @@
 {
   "users": [
     {
-      "id": "933641",
-      "estado": "INACTIVO",
-      "sector": 1000,
-      "usuario": "NORA TOURIÑO"
-    },
-    {
-      "id": "933642",
-      "estado": "INACTIVO",
-      "sector": 1000,
-      "usuario": "PAULA"
-    },
-    {
-      "id": "933643",
-      "estado": "ACTIVO",
-      "sector": 1000,
-      "usuario": "GRISOLIA"
-    },
-    {
-      "id": "933644",
-      "estado": "ACTIVO",
-      "sector": 1000,
-      "usuario": "TEISCEIRA"
-    },
-    {
-      "id": "933645",
-      "estado": "ACTIVO",
-      "sector": 1000,
-      "usuario": "GUELFAND"
-    },
-    {
-      "id": "933646",
-      "estado": "ACTIVO",
-      "sector": 1000,
-      "usuario": "RODRIGO FREIDIG"
-    },
-    {
-      "id": "933647",
-      "estado": "ACTIVO",
-      "sector": 1000,
-      "usuario": "DE LUCA"
-    },
-    {
-      "id": "933648",
-      "estado": "ACTIVO",
-      "sector": 1000,
-      "usuario": "ANTO"
-    },
-    {
       "id": "933649",
+      "usuario": "ARMUAa",
       "estado": "ACTIVO",
-      "sector": 1000,
-      "usuario": "ARMUA"
+      "sector": 1000
     },
     {
       "id": "933650",
@@ -74,15 +26,9 @@
     },
     {
       "id": "933653",
+      "usuario": "CONTRERA",
       "estado": "INACTIVO",
-      "sector": 1000,
-      "usuario": "CONTRERA"
-    },
-    {
-      "id": "933654",
-      "estado": "ACTIVO",
-      "sector": 1000,
-      "usuario": "ADMINISTRACION"
+      "sector": 1000
     },
     {
       "id": "933655",
@@ -517,12 +463,6 @@
       "usuario": "PELLIZZERI"
     },
     {
-      "id": "933728",
-      "estado": "INACTIVO",
-      "sector": 1000,
-      "usuario": "BORGIA"
-    },
-    {
       "id": "933729",
       "estado": "INACTIVO",
       "sector": 1000,
@@ -539,12 +479,6 @@
       "estado": "INACTIVO",
       "sector": 1000,
       "usuario": "DE LUCA"
-    },
-    {
-      "id": "933631",
-      "estado": "ACTIVO",
-      "sector": 1000,
-      "usuario": "STAR OVER SRL"
     },
     {
       "id": "933632",
@@ -593,12 +527,6 @@
       "estado": "ACTIVO",
       "sector": 1000,
       "usuario": "DIAZ"
-    },
-    {
-      "id": "933641",
-      "estado": "INACTIVO",
-      "sector": 1000,
-      "usuario": "NORA TOURIÑO"
     },
     {
       "id": "933642",
@@ -1123,12 +1051,6 @@
       "usuario": "DE LUCA"
     },
     {
-      "id": "933631",
-      "estado": "ACTIVO",
-      "sector": 1000,
-      "usuario": "STAR OVER SRL"
-    },
-    {
       "id": "933632",
       "estado": "ACTIVO",
       "sector": 1000,
@@ -1175,12 +1097,6 @@
       "estado": "ACTIVO",
       "sector": 1000,
       "usuario": "DIAZ"
-    },
-    {
-      "id": "933641",
-      "estado": "INACTIVO",
-      "sector": 1000,
-      "usuario": "NORA TOURIÑO"
     },
     {
       "id": "933642",
@@ -10717,27 +10633,27 @@
       "sector": null
     },
     {
-      "id": 324242,
-      "usuario": "ASo",
-      "estado": "ACTIVO",
-      "sector": 1000
-    },
-    {
-      "id": 45353,
-      "usuario": "ADMINZZ",
-      "estado": "ACTIVO",
-      "sector": 1000
-    },
-    {
-      "id": 933631,
+      "id": "933631",
       "usuario": "DOaa",
       "estado": "ACTIVO",
       "sector": 1000
     },
     {
-      "id": 933641,
+      "id": "933641",
       "usuario": "DOaa",
       "estado": "ACTIVO",
+      "sector": 1000
+    },
+    {
+      "id": 1000,
+      "usuario": "Prueba",
+      "estado": "INACTIVO",
+      "sector": 1000
+    },
+    {
+      "id": 1001,
+      "usuario": "Pruebaa",
+      "estado": "INACTIVO",
       "sector": 1000
     }
   ]

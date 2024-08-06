@@ -10,8 +10,8 @@ export default async function UsersPage() {
 
     return (
         <div>
-           <Suspense fallback={<h1>Cargando...</h1>}>
-            <UserDataTable initialUsers={initialUsers} />
+            <Suspense fallback={<h1>Cargando...</h1>}>
+                <UserDataTable initialUsers={initialUsers} />
             </Suspense>
         </div>
     );

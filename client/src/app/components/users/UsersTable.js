@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import React, { useState, useEffect, useCallback } from 'react';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
@@ -8,9 +8,8 @@ import FiltersBar from './FiltersBar';
 import Pagination from '../Pagination';
 import UserModal from './UserModal';
 import styles from '../../styles/filtersbar.module.scss';
-import { fetchUsersFromJsonServer, deleteUserFromJsonServer } from '@/app/services';
+import { fetchUsersFromJsonServer, deleteUsers } from '@/app/services';
 import UserTableActions from './UserTableActions';
-
 
 export default function UserDataTable({ initialUsers }) {
     const [first, setFirst] = useState(0);
@@ -47,7 +46,7 @@ export default function UserDataTable({ initialUsers }) {
 
     const handleDelete = async (user) => {
         try {
-            await deleteUserFromJsonServer(user.id);
+            await deleteUsers(user.id);
             const updatedUsers = await fetchUsersFromJsonServer();
             setFilteredUsers(updatedUsers);
             setUsers(updatedUsers);
@@ -58,7 +57,7 @@ export default function UserDataTable({ initialUsers }) {
 
     const showDeleteConfirmation = (user) => {
         confirmDialog({
-            message: '¿Estás seguro de que deseas eliminar el usuario ?',
+            message: '¿Estás seguro de que deseas eliminar el usuario?',
             header: 'Eliminar Usuario',
             icon: 'pi pi-info-circle',
             acceptLabel: 'Sí', 
@@ -66,6 +65,12 @@ export default function UserDataTable({ initialUsers }) {
             accept: () => handleDelete(user),
             reject: () => {}
         });
+    };
+
+    const handleEdit = (user) => {
+        setSelectedUser(user);
+        setModalMode('edit');
+        setVisible(true);
     };
 
     const applyFilters = useCallback(({ searchTerm, selectedEstado }) => {
@@ -100,6 +105,14 @@ export default function UserDataTable({ initialUsers }) {
                     header="Nombre" 
                     sortable 
                     style={{ width: '25%' }} 
+                    body={(rowData) => (
+                        <span 
+                            onClick={() => handleEdit(rowData)} 
+                            style={{ cursor: 'pointer', color: 'blue' }}
+                        >
+                            {rowData.usuario}
+                        </span>
+                    )}
                 ></Column>
                 <Column field="estado" header="Estado" sortable style={{ width: '20%' }}></Column>
                 <Column field="sector" header="Sector" sortable style={{ width: '15%' }}></Column>
@@ -111,7 +124,7 @@ export default function UserDataTable({ initialUsers }) {
                     style={{ width: '20%' }}
                 ></Column>
             </DataTable>
-            <Pagination data={filteredUsers} first={first} rows={rows} onPageChange={onPageChange} rowsPerPageOptions={[5, 10, 20]} />
+            <Pagination data={filteredUsers} first={first} rows={rows} onPageChange={onPageChange} rowsPerPageOptions={[10]} />
             <ConfirmDialog />
         </div>
     );
