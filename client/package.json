@@ -1,5 +1,5 @@
 {
-  "name": "dux-challenge",
+  "name": "dux",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "chart.js": "^4.4.3",
+    "json-server": "^1.0.0-beta.1",
+    "next": "14.2.5",
+    "primeflex": "^3.3.1",
+    "primeicons": "^7.0.0",
+    "primereact": "^10.8.0",
+    "quill": "^2.0.2",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "sass": "^1.77.8"
   },
   "devDependencies": {
     "eslint": "^8",

@@ -1,0 +1,39 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; // Ocupa toda la altura de la ventana
+  }
+  
+  .menubar {
+    background-color: #f8f9fa;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .main-content-wrapper {
+    display: flex;
+    flex: 1;
+  }
+  
+  .sidebar {
+    background-color: #02070c;
+    border-right: 1px solid #7aa0c7;
+    height: 92vh;
+    width: 80px;
+    padding: 10px;
+    overflow-y: auto;
+    transition: all 0.3s;
+    flex-shrink: 0; // Asegura que el sidebar no se reduzca
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto;
+  }
+
+  
+
+  
+  

@@ -1,0 +1,12 @@
+.customSideBar {
+    background-color: #02070c;
+    border-right: 1px solid #7aa0c7;
+    height: 92vh;
+    width: 80px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px;
+    overflow-y: auto;
+    transition: all 0.3s;
+}

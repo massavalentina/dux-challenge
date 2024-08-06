@@ -1,0 +1,38 @@
+.customFiltersBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    width: 100%;
+
+    .filterInput {
+        flex: 1;
+        min-width: 200px; 
+        margin-right: 1rem; 
+    }
+
+    .p-inputtext, .p-dropdown {
+        width: 100%; 
+    }
+}
+
+.customButton {
+    background-color: #0763E7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.customButton:hover {
+    background-color: #054fad;
+}
+
+.customTable {
+    font-size: 0.9rem; /* Ajusta el tamaño de la fuente */
+    /* Puedes agregar más estilos aquí si es necesario */
+}
